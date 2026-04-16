@@ -21,64 +21,21 @@ This repository contains the front-end architecture for the V.I.T.A.L. Systems l
 
 ## Tech Stack
 
-*   **Core:** React 19, TypeScript
-*   **Build Engine:** Vite 6
-*   **Styling:** Tailwind CSS v4 (with custom `@theme` integrations)
-*   **Animations:** Motion (`motion/react`)
-*   **Iconography:** Lucide React
+*   **Core:** Vanilla HTML5, JavaScript (ES6+)
+*   **Styling:** Tailwind CSS v4 (Powered entirely via browser CDN script)
+*   **Animations:** Native CSS Animations & Intersection Observer API
+*   **Iconography:** Lucide (Vanilla JS integration via CDN)
 
 ## Project Structure
 
 ```text
 /
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── Architecture.tsx   # Visual breakdown of pod layers + VBoxes
-│   │   ├── CTA.tsx            # Lead generation / Google Form link
-│   │   ├── DataFlow.tsx       # Edge compute and cryptographic ledger explanation
-│   │   ├── Economics.tsx      # B2B value proposition and ROI
-│   │   ├── Footer.tsx         # Clean corporate footer
-│   │   ├── Hero.tsx           # High-impact animated landing section
-│   │   ├── Navbar.tsx         # Sticky navigation header
-│   │   ├── PodTypes.tsx       # Hardware variants (Basic, Smart, Ultra, Defense)
-│   │   └── Problem.tsx        # The cold chain structural failure explanation
-│   ├── App.tsx                # Main application layout and assembly
-│   ├── index.css              # Global styles, variables, and typography
-│   └── main.tsx               # React DOM entry point
-├── index.html                 # HTML template
-├── package.json               # Dependencies and scripts
-├── tailwind.config.ts         # Tailwind configuration (CSS-based via v4)
-└── vite.config.ts             # Vite configuration
+├── index.html                 # Single-page HTML structure with embedded Tailwind configs
+├── styles.css                 # Global styles, variables, typography, and custom CSS animations
+├── script.js                  # Vanilla JS for icons, precise scroll observers, and sticky nav
+└── README.md                  # This documentation
 ```
-
-## Getting Started
-
-### Prerequisites
-* Node.js (v18+ recommended)
-* npm or pnpm
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Build for production:
-   ```bash
-   npm run build
-   ```
 
 ## License
 © V.I.T.A.L. Systems. All rights reserved.
+b

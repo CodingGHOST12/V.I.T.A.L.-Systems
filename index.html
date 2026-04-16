@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V.I.T.A.L. Systems | Deep-Tech Cold Chain</title>
+  
+  <!-- CDNs for truly zero-build pure HTML functionality -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Tailwind Overrides -->
+  <style type="text/tailwindcss">
+    @theme {
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+      --color-vital-bg: #050505;
+      --color-vital-surface: #111111;
+      --color-vital-border: #222222;
+      --color-vital-cyan: #00f0ff;
+      --color-vital-amber: #ff9900;
+    }
+  </style>
+  
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-vital-bg text-white selection:bg-vital-cyan selection:text-black overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-6">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="text-xl font-bold tracking-tighter">V.I.T.A.L.</div>
+      <div class="hidden lg:flex gap-8 text-sm font-mono text-zinc-400">
+        <a href="#problem" class="hover:text-white transition-colors">01. CRISIS</a>
+        <a href="#architecture" class="hover:text-white transition-colors">02. ARCHITECTURE</a>
+        <a href="#pods" class="hover:text-white transition-colors">03. HARDWARE</a>
+        <a href="#data" class="hover:text-white transition-colors">04. INTELLIGENCE</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <div class="absolute inset-0 bg-vital-bg">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-vital-cyan/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-vital-amber/10 rounded-full blur-[120px]"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
+        <div class="flex flex-col items-center">
+          <div class="reveal-on-scroll delay-100 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-vital-border bg-vital-surface/50 backdrop-blur-sm mb-8">
+            <span class="w-2 h-2 rounded-full bg-vital-cyan animate-pulse"></span>
+            <span class="text-xs font-mono tracking-widest text-zinc-300">SYSTEM ONLINE</span>
+          </div>
+          <h1 class="reveal-on-scroll delay-200 text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-6">
+            V.I.T.A.L.
+          </h1>
+          <p class="reveal-on-scroll delay-300 text-lg sm:text-xl md:text-2xl text-zinc-400 font-light max-w-3xl mx-auto mb-12 px-4">
+            Variable Intelligent Thermal Assurance Logistics. <br class="hidden md:block" />
+            Solving the structural failure of global thermal logistics.
+          </p>
+          <div class="reveal-on-scroll delay-400 flex justify-center w-full px-6 sm:px-0">
+            <a href="https://forms.gle/6ofsBBzXcA7t19jD6" target="_blank" rel="noopener noreferrer"
+              class="px-8 py-4 bg-vital-cyan text-black font-bold rounded-lg hover:bg-white hover:shadow-[0_0_30px_rgba(0,240,255,0.4)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto flex items-center justify-center uppercase tracking-wide">
+              Request Access
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-zinc-500 animate-bounce-float">
+        <i data-lucide="arrow-down" class="w-6 h-6"></i>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem" class="py-24 relative border-t border-vital-border bg-[#0a0a0a]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="reveal-on-scroll">
+            <h2 class="text-sm font-mono text-vital-amber mb-2 tracking-widest uppercase">01 / The Crisis</h2>
+            <h3 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Structural Failure</h3>
+            <p class="text-zinc-400 text-lg leading-relaxed mb-6">
+              The global cold chain relies on continuous active power and seamless handoffs. A single point of failure—a delayed truck or tarmac exposure—compromises the entire shipment.
+            </p>
+            <p class="text-zinc-400 text-lg leading-relaxed">
+              This is a physical infrastructure failure, resulting in billions lost to thermal shocks during transit.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 reveal-on-scroll delay-200 hide-mobile-delay">
+            <div class="bg-vital-surface border border-vital-border p-6 sm:p-8 rounded-xl flex flex-col justify-between min-h-[12rem]">
+              <i data-lucide="alert-triangle" class="w-8 h-8 text-vital-amber mb-4"></i>
+              <div>
+                <div class="text-3xl sm:text-4xl font-bold text-white mb-1">₹92,000 Cr</div>
+                <div class="text-xs sm:text-sm font-mono text-zinc-500 uppercase">Annual Loss (India)</div>
+              </div>
+            </div>
+            <div class="bg-vital-surface border border-vital-border p-6 sm:p-8 rounded-xl flex flex-col justify-between min-h-[12rem]">
+              <i data-lucide="trending-down" class="w-8 h-8 text-red-500 mb-4"></i>
+              <div>
+                <div class="text-3xl sm:text-4xl font-bold text-white mb-1">15-20%</div>
+                <div class="text-xs sm:text-sm font-mono text-zinc-500 uppercase">Cargo Degradation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section id="architecture" class="py-24 relative border-t border-vital-border bg-vital-bg overflow-hidden">
+      <div class="absolute inset-0 bg-grid-pattern opacity-50"></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="mb-16 reveal-on-scroll">
+          <h2 class="text-sm font-mono text-vital-cyan mb-2 tracking-widest uppercase">02 / System Architecture</h2>
+          <h3 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Anatomy of a V.I.T.A.L. Pod</h3>
+          <p class="text-zinc-400 max-w-3xl text-lg leading-relaxed">
+            Autonomous thermal infrastructure. The system is divided into three distinct layers, engineered to guarantee 72 hours of passive operation in hostile environments.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div class="reveal-on-scroll bg-vital-surface border border-vital-border p-8 rounded-xl relative hover:border-zinc-700 transition-colors">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-zinc-800 to-zinc-600 rounded-t-xl"></div>
+            <i data-lucide="shield" class="w-10 h-10 text-zinc-400 mb-6"></i>
+            <h4 class="text-xl font-bold mb-3">Layer 1: The Shield</h4>
+            <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
+              Impact-resistant polymer and carbon-fiber composite exoskeleton. Coated with a solar-reflective layer to deflect ambient radiation on airport tarmacs.
+            </p>
+            <ul class="space-y-3 font-mono text-xs text-zinc-500">
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-zinc-500 rounded-full"></div> Tensile Strength: 400 MPa</li>
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-zinc-500 rounded-full"></div> Solar Reflectance: 92%</li>
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-zinc-500 rounded-full"></div> IP68 Water/Dust Resistance</li>
+            </ul>
+          </div>
+          <div class="reveal-on-scroll delay-100 hide-mobile-delay bg-vital-surface border border-vital-border p-8 rounded-xl relative hover:border-vital-cyan/50 transition-colors">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vital-cyan to-blue-600 rounded-t-xl"></div>
+            <i data-lucide="thermometer-snowflake" class="w-10 h-10 text-vital-cyan mb-6"></i>
+            <h4 class="text-xl font-bold mb-3">Layer 2: The Core</h4>
+            <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
+              Vacuum Insulated Panels (VIPs) combined with tailored Phase Change Materials (PCMs). Provides massive thermal inertia.
+            </p>
+            <ul class="space-y-3 font-mono text-xs text-zinc-500">
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-vital-cyan rounded-full"></div> VIP R-Value: R-50 per inch</li>
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-vital-cyan rounded-full"></div> PCM Latent Heat: 250 J/g</li>
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-vital-cyan rounded-full"></div> Passive Survival: 72 Hours</li>
+            </ul>
+          </div>
+          <div class="reveal-on-scroll delay-200 hide-mobile-delay bg-vital-surface border border-vital-border p-8 rounded-xl relative hover:border-vital-amber/50 transition-colors">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vital-amber to-orange-600 rounded-t-xl"></div>
+            <i data-lucide="cpu" class="w-10 h-10 text-vital-amber mb-6"></i>
+            <h4 class="text-xl font-bold mb-3">Layer 3: The Brain</h4>
+            <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
+              Edge AI node powered by a 48V LiFePO4 battery system. Controls active micro-compressors and logs cryptographic sensor data.
+            </p>
+            <ul class="space-y-3 font-mono text-xs text-zinc-500">
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-vital-amber rounded-full"></div> Power: 48V LiFePO4 (2kWh)</li>
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-vital-amber rounded-full"></div> Compute: ARM Cortex Edge Node</li>
+              <li class="flex items-center gap-2"><div class="w-1 h-1 bg-vital-amber rounded-full"></div> Active Cooling: BLDC Compressor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POD TYPES -->
+    <section id="pods" class="py-24 relative border-t border-vital-border bg-[#050505]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16 text-center reveal-on-scroll">
+          <h2 class="text-sm font-mono text-zinc-500 mb-2 tracking-widest uppercase">03 / Hardware Variants</h2>
+          <h3 class="text-4xl md:text-5xl font-bold tracking-tight">The Pod Ecosystem</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="reveal-on-scroll bg-vital-surface border border-vital-border p-6 rounded-xl flex flex-col h-full">
+            <div class="mb-6"><i data-lucide="box" class="w-8 h-8 text-zinc-400"></i></div>
+            <h4 class="text-xl font-bold mb-3">Basic Pod</h4>
+            <p class="text-zinc-400 text-sm mb-6 flex-grow">Passive thermal protection using VIPs and PCMs. Ideal for short-haul agricultural transport.</p>
+            <ul class="space-y-2 mt-auto">
+              <li class="flex items-center gap-2 text-xs font-mono text-zinc-500"><div class="w-1 h-1 rounded-full bg-zinc-500"></div> Passive PCM + VIP</li>
+              <li class="flex items-center gap-2 text-xs font-mono text-zinc-500"><div class="w-1 h-1 rounded-full bg-zinc-500"></div> 48hr Survival</li>
+            </ul>
+          </div>
+          <div class="reveal-on-scroll delay-100 hide-mobile-delay bg-vital-surface border border-vital-border p-6 rounded-xl flex flex-col h-full">
+            <div class="mb-6"><i data-lucide="zap" class="w-8 h-8 text-vital-cyan"></i></div>
+            <h4 class="text-xl font-bold mb-3">Smart Pod</h4>
+            <p class="text-zinc-400 text-sm mb-6 flex-grow">Active cooling with edge compute. Real-time tracking and anomaly detection for high-value perishables.</p>
+            <ul class="space-y-2 mt-auto">
+              <li class="flex items-center gap-2 text-xs font-mono text-zinc-500"><div class="w-1 h-1 rounded-full bg-vital-cyan"></div> Active Compressor</li>
+              <li class="flex items-center gap-2 text-xs font-mono text-zinc-500"><div class="w-1 h-1 rounded-full bg-vital-cyan"></div> Edge Compute & Cellular</li>
+            </ul>
+          </div>
+          <div class="reveal-on-scroll delay-200 hide-mobile-delay bg-vital-surface border border-vital-border p-6 rounded-xl flex flex-col h-full">
+            <div class="mb-6"><i data-lucide="satellite" class="w-8 h-8 text-blue-500"></i></div>
+            <h4 class="text-xl font-bold mb-3">Ultra Pod</h4>
+            <p class="text-zinc-400 text-sm mb-6 flex-grow">Multi-zone cooling with satellite uplink. Pharma-grade precision for vaccines and biologics.</p>
+            <ul class="space-y-2 mt-auto">
+              <li class="flex items-center gap-2 text-xs font-mono text-zinc-500"><div class="w-1 h-1 rounded-full bg-blue-500"></div> Multi-Zone Inner VBoxes</li>
+              <li class="flex items-center gap-2 text-xs font-mono text-zinc-500"><div class="w-1 h-1 rounded-full bg-blue-500"></div> Satellite Uplink</li>
+            </ul>
+          </div>
+          <div class="reveal-on-scroll delay-300 hide-mobile-delay bg-vital-surface border border-vital-border p-6 rounded-xl flex flex-col h-full">
+            <div class="mb-6"><i data-lucide="shield-alert" class="w-8 h-8 text-vital-amber"></i></div>
+            <h4 class="text-xl font-bold mb-3">Defense Pod</h4>
+            <p class="text-zinc-400 text-sm mb-6 flex-grow">EMP-shielded, ruggedized units for blood and vaccine transport in hostile environments.</p>
+            <ul class="space-y-2 mt-auto">
+              <li class="flex items-center gap-2 text-xs font-mono text-zinc-500"><div class="w-1 h-1 rounded-full bg-vital-amber"></div> EMP Shield + MIL-SPEC</li>
+              <li class="flex items-center gap-2 text-xs font-mono text-zinc-500"><div class="w-1 h-1 rounded-full bg-vital-amber"></div> 120hr Zero-Grid Survival</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA FLOW -->
+    <section id="data" class="py-24 relative border-t border-vital-border bg-[#0a0a0a]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16 reveal-on-scroll">
+          <h2 class="text-sm font-mono text-blue-500 mb-2 tracking-widest uppercase">04 / Intelligence Layer</h2>
+          <h3 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Edge Compute</h3>
+          <p class="text-zinc-400 max-w-3xl text-lg leading-relaxed">
+            V.I.T.A.L. pods do not rely on constant cloud connectivity. They are autonomous edge nodes capable of making real-time thermal decisions offline.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="space-y-8 reveal-on-scroll">
+            <div class="flex gap-4">
+              <i data-lucide="activity" class="w-6 h-6 text-vital-cyan shrink-0 mt-1"></i>
+              <div>
+                <h4 class="text-lg font-bold mb-2">1. Sensor Ingestion</h4>
+                <p class="text-zinc-400 text-sm">Continuous 10Hz sampling of internal temp, ambient heat, shock, and gas levels.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <i data-lucide="network" class="w-6 h-6 text-vital-amber shrink-0 mt-1"></i>
+              <div>
+                <h4 class="text-lg font-bold mb-2">2. Local Inference</h4>
+                <p class="text-zinc-400 text-sm">The ARM Cortex processor runs predictive thermal models natively.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <i data-lucide="lock" class="w-6 h-6 text-blue-500 shrink-0 mt-1"></i>
+              <div>
+                <h4 class="text-lg font-bold mb-2">3. Cryptographic Logging</h4>
+                <p class="text-zinc-400 text-sm">Sensors sign data locally, creating an immutable history for pharma compliance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-vital-surface border border-vital-border rounded-xl p-6 font-mono text-xs text-zinc-400 relative overflow-hidden reveal-on-scroll delay-200 hide-mobile-delay">
+            <div class="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
+            <div class="mb-4 text-blue-500">SYSTEM.LOG // LIVE FEED</div>
+            <div class="space-y-2 opacity-80 overflow-x-auto whitespace-nowrap pb-2 text-[10px] sm:text-xs">
+              <p>[10:42:01] SENSOR: EXT_TEMP=38.2C INT_TEMP=4.1C</p>
+              <p>[10:42:02] AI_PREDICTION: THERMAL_BREACH_IN_45M</p>
+              <p class="text-vital-amber">[10:42:02] ACTION: ENGAGE_COMPRESSOR (PWR=40%)</p>
+              <p>[10:42:10] LEDGER: SIGNING_BLOCK_#89234</p>
+              <p class="text-vital-cyan">[10:42:15] ACTION: PCM_LATENT_HEAT_ABSORPTION_DETECTED</p>
+              <p class="text-green-400">[10:42:35] STATUS: THERMAL_EQUILIBRIUM_MAINTAINED</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECONOMICS -->
+    <section id="economics" class="py-24 relative border-t border-vital-border bg-[#050505]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16 text-center reveal-on-scroll">
+          <h2 class="text-sm font-mono text-green-500 mb-2 tracking-widest uppercase">05 / The Business Case</h2>
+          <h3 class="text-4xl md:text-5xl font-bold tracking-tight">Unit Economics & Viability</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="reveal-on-scroll bg-vital-surface border border-vital-border p-8 rounded-xl">
+            <i data-lucide="trending-up" class="w-10 h-10 text-green-500 mb-6"></i>
+            <h4 class="text-xl font-bold mb-4">Eliminating the 20% Loss</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Higher CapEx per pod is mathematically eclipsed by zeroing out the structural 15-20% spoilage rate in traditional supply lines.
+            </p>
+          </div>
+          <div class="reveal-on-scroll delay-100 hide-mobile-delay bg-vital-surface border border-vital-border p-8 rounded-xl">
+            <i data-lucide="shield-check" class="w-10 h-10 text-blue-500 mb-6"></i>
+            <h4 class="text-xl font-bold mb-4">Insurance & Compliance</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Immutable ledgers reduce insurance friction and provide absolute proof of regulatory thermal compliance.
+            </p>
+          </div>
+          <div class="reveal-on-scroll delay-200 hide-mobile-delay bg-vital-surface border border-vital-border p-8 rounded-xl">
+            <i data-lucide="scale" class="w-10 h-10 text-vital-amber mb-6"></i>
+            <h4 class="text-xl font-bold mb-4">Pricing Power</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Logistics partners acquire the ability to command premium pricing for guaranteed "Zero-Excursion" transit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 relative border-t border-vital-border bg-vital-bg overflow-hidden">
+      <div class="absolute inset-0 bg-vital-cyan/5 blur-[100px] rounded-full transform -translate-y-1/2"></div>
+      <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+        <div class="reveal-on-scroll">
+          <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-6">Ready to Secure Your Cold Chain?</h2>
+          <p class="text-zinc-400 text-lg mb-10 max-w-2xl mx-auto">
+            Join the waitlist for V.I.T.A.L. early access or request a technical demonstration for your logistics network.
+          </p>
+          <a href="https://forms.gle/6ofsBBzXcA7t19jD6" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-vital-cyan text-black font-bold rounded-lg hover:bg-white hover:shadow-[0_0_30px_rgba(0,240,255,0.4)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
+            Request Access
+            <i data-lucide="external-link" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-12 border-t border-vital-border bg-black text-center">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl font-bold tracking-tighter mb-4">V.I.T.A.L.</h2>
+      <p class="text-zinc-500 text-sm mb-8 max-w-xl mx-auto">
+        Autonomous edge-compute infrastructure guaranteeing thermal survival.
+      </p>
+      <div class="flex justify-center gap-6 text-sm font-mono text-zinc-600">
+        <span class="cursor-default">PRIVACY POLICY</span>
+        <span class="cursor-default">TERMS OF SERVICE</span>
+      </div>
+      <div class="mt-12 text-xs text-zinc-700 font-mono">
+        © 2026 V.I.T.A.L. Systems. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
+
